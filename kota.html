@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Semarang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #f0f4f8;
+        }
+main {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/148/918/non_2x/colonial-vintage-vector-illustration-of-semarang-indonesia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundMove 30s linear infinite;
+    transition: background-position 1s ease;
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Hitam transparan */
+    z-index: 0; /* Lower z-index */
+}
+
+.main-content {
+    position: relative;
+    z-index: 1; /* Ensure the content is above the overlay */
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: center top;
+    }
+    100% {
+        background-position: center bottom;
+    }
+}
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background-color: #2c3e50;
+            padding: 10px 0;
+            transition: background-color 0.3s ease-in-out;
+        }
+        header .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        header .nav-links a {
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        header .nav-links a:hover {
+            background-color: #16a085;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        section {
+            padding: 5rem 2rem;
+            transition: transform 0.5s ease-in-out;
+        }
+        section:target {
+            transform: translateY(0);
+        }
+        @media screen and (max-width: 768px) {
+            main {
+                background-attachment: scroll;
+            }
+            header .nav-links {
+                flex-direction: column;
+            }
+            section {
+                padding: 5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-blue-100">
+
+    <header class="bg-blue-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex space-x-4">
+                <a href="#">
+                    <img alt="Semarang Logo" src="https://semarangkota.go.id/content/image/images/logo-kota-semarang.png" class="h-12" />
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Beranda</a>
+                <a href="#history">Sejarah</a>
+                <a href="#Tourism">Wisata</a> 
+                <a href="#Culinary Tourism">Kuliner</a>
+                <a href="#city park">Taman</a>
+                <a href="#contact">Kontak</a>
+            </div>
+        </div>
+    </header>
+    <main id="home" class="container mx-auto text-center">
+        <div class="main-content">
+            <h1 class="text-4xl font-bold text-white">Selamat Datang di Semarang</h1>
+            <p class="text-white mt-4">Temukan berbagai informasi menarik tentang Semarang di sini.</p>
+        </div>
+    </main>
+    
+    <section id="history" class="bg-white py-10">
+        <div class="container mx-auto grid-container">
+            <div class="text-center">
+                <img alt="Ilustrasi bus" class="mx-auto mb-4" height="150" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYZNRPnTwpFYEEyO1J9MhY7ITZJLegiFVzUg&s" width="200" />
+                <h3 class="text-xl font-bold">Sejarah Unggulan</h3>
+                <p class="text-gray-600">Kota Semarang, ibu kota Provinsi Jawa Tengah, memiliki sejarah panjang yang dipengaruhi oleh berbagai peradaban dan kekuasaan, dari masa prasejarah hingga era kolonial Belanda, serta perkembangan modern yang pesat di abad ke-20 dan 21. Semarang yang terletak di pesisir utara Pulau Jawa, menjadi titik strategis dalam perdagangan, baik di masa kerajaan-kerajaan Indonesia maupun pada masa penjajahan Belanda.
+
+Masa Prasejarah dan Hindu-Buddha Pada masa prasejarah, wilayah Semarang sudah dihuni oleh masyarakat yang meninggalkan jejak berupa artefak-artefak batu dan prasasti. Bukti adanya peradaban Hindu-Buddha di wilayah ini dapat dilihat pada temuan arca dan candi yang tersebar di sekitar kota, seperti Candi Gedong Songo yang terletak di lereng Gunung Ungaran. Candi ini menjadi saksi bisu dari pengaruh budaya Hindu-Buddha yang pernah berkembang di Semarang dan sekitarnya.
+
+Masa Kesultanan Demak dan Mataram Semarang awalnya merupakan bagian dari Kesultanan Demak yang menjadi salah satu kerajaan besar di Pulau Jawa pada abad ke-15. Setelah runtuhnya Demak, Semarang masuk dalam kekuasaan Mataram yang berpusat di Yogyakarta. Selama masa ini, Semarang berkembang sebagai pelabuhan penting untuk perdagangan rempah-rempah dan komoditas lainnya, meskipun belum menjadi kota besar seperti sekarang.
+
+Masa Penjajahan Belanda Pada abad ke-17, Semarang jatuh ke tangan Belanda dan menjadi bagian dari Hindia Belanda. Semarang berkembang pesat sebagai pusat perdagangan utama bagi Belanda, khususnya untuk komoditas ekspor seperti lada, gula, dan kopi. Pada masa ini, Belanda membangun infrastruktur yang mendukung perkembangan kota, termasuk pelabuhan, jalan raya, dan bangunan kolonial yang kini menjadi bagian penting dari warisan arsitektur kota.
+
+Pemberontakan dan Perjuangan Kemerdekaan Pada masa awal abad ke-20, Semarang menjadi pusat aktivitas pergerakan nasional Indonesia. Kota ini menyaksikan berbagai perlawanan terhadap penjajahan Belanda, baik dalam bentuk gerakan politik maupun aksi-aksi bersenjata. Salah satu momen penting adalah terjadinya pertempuran di Semarang pada tahun 1949 antara pejuang kemerdekaan Indonesia dan pasukan Belanda dalam perjuangan mempertahankan kemerdekaan.
+
+Semarang Modern Setelah kemerdekaan Indonesia pada tahun 1945, Semarang terus berkembang pesat. Infrastruktur kota terus diperbaiki dengan pembangunan fasilitas modern, dan Semarang kini menjadi kota yang penting di Jawa Tengah. Selain sebagai pusat ekonomi, Semarang juga dikenal sebagai pusat pendidikan dan budaya dengan banyaknya universitas, museum, dan galeri seni. Kota ini juga merupakan pusat industri dengan berbagai kawasan industri dan pabrik-pabrik besar yang tersebar di sekitar kota.
+
+Warisan Budaya dan Wisata Semarang juga kaya akan warisan budaya, dengan banyak bangunan bersejarah yang masih terjaga hingga kini, seperti Lawang Sewu, Gereja Blenduk, dan Kota Lama. Sebagai kota pelabuhan yang berkembang pesat pada masa kolonial, Semarang memiliki campuran budaya yang unik, terlihat dari berbagai tempat ibadah, kuliner khas, serta arsitektur kolonial yang mempengaruhi wajah kota ini. Kini, Semarang menjadi salah satu tujuan wisata utama di Jawa Tengah yang menawarkan berbagai atraksi budaya, sejarah, serta wisata kuliner yang menggoda.</p>
+            </div>
+        </div>
+    </section>
+    <section id="Tourism" class="bg-white py-10">
+        <div class="container mx-auto grid-container">
+            <div class="text-center">
+                <img alt="Ilustrasi objek wisata" class="mx-auto mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/MZ3Kr9X91XqWK51UHWKzLyg1Wax3LnoLlYR4VMp1BMsa7t9E.jpg" width="200" />
+                <h3 class="text-xl font-bold">Wisata</h3>
+                <p class="text-gray-600">Kota Semarang, ibu kota Provinsi Jawa Tengah, menawarkan beragam destinasi wisata yang memadukan keindahan alam, kekayaan budaya, dan sejarah yang mendalam. Terletak di pesisir utara Pulau Jawa, Semarang memiliki daya tarik yang tak hanya menonjolkan keindahan alamnya, tetapi juga warisan arsitektur kolonial yang mempesona dan kekayaan kuliner yang lezat.</p>
+            </div>
+        </div>
+    </section> 
+    <section id="Culinary Tourism" class="bg-white py-10"> 
+        <div class="container mx-auto grid-container">
+            <div class="text-center">
+                <img alt="Ilustrasi wisata kuliner" class="mx-auto mb-4" height="150" src="https://awsimages.detik.net.id/community/media/visual/2020/04/22/3214ec3b-b717-4355-a446-5586a210c43a.png?w=600&q=90" width="200" />
+                <h3 class="text-xl font-bold">Wisata Kuliner</h3>
+                <p class="text-gray-600">Kota Semarang tidak hanya dikenal karena keindahan alam dan sejarahnya yang kaya, tetapi juga karena kelezatan kulinernya yang menggugah selera. Semarang memiliki beragam makanan khas yang telah menjadi bagian dari warisan budaya dan daya tarik wisatawan. Kuliner Semarang memadukan rasa manis, pedas, gurih, dan asam yang khas, serta menggunakan bahan-bahan lokal yang segar dan berkualitas..</p>
+            </div>
+        </div>
+    </section> 
+    <section id="city park" class="bg-white py-10">      
+        <div class="container mx-auto grid-container">
+            <div class="text-center">
+                <img alt="Ilustrasi taman kota" class="mx-auto mb-4" height="150" src="https://media.istockphoto.com/id/1291368509/id/vektor/taman-kota.jpg?s=612x612&w=0&k=20&c=EXFcihR4Abj2mMYUYDSqWlqw8SpYYfBpe8ZzrJFv0zM=" width="200" />
+                <h3 class="text-xl font-bold">Taman Kota</h3>
+                <p class="text-gray-600">Semarang, sebagai kota yang kaya akan sejarah dan budaya, juga menawarkan banyak taman yang menjadi tempat favorit untuk bersantai, berolahraga, atau menikmati keindahan alam. Taman-taman di Semarang tidak hanya memberikan suasana yang asri dan segar, tetapi juga menjadi ruang publik yang menyenangkan bagi warga maupun wisatawan. Setiap taman di Semarang memiliki daya tarik tersendiri yang menjadikannya tujuan wisata dan tempat rekreasi yang menyegarkan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-white py-10">
+        <div class="container mx-auto text-center">
+            <h3 class="text-xl font-bold">Hubungi Kami</h3>
+            <p class="text-gray-600">Jika Anda memiliki pertanyaan, silakan hubungi kami.</p>
+            <a class="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 inline-block" href="mailto:contact@semarang.com">Email Kami</a>
+        </div>
+    </section>
+
+    <footer class="bg-blue-900 text-white py-4">
+        <p>&copy; 2024 Semarang </p>
+    </footer>
+
+</body>
+</html>
